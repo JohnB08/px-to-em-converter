@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="basepxcontainer">
+        <label for="basepx">Body Font Size</label>
+        <input type="text" name="basepx" id="basepx" value="16" />
+      </div>
+      <div class="inputcontainer">
+        <label for="pixelvalue">Pixel Font Size</label>
+        <input type="text" name="pixelvalue" id="pixelvalue" />
+        <button type="submit" onclick="buttonpx()">Calculate EM</button>
+      </div>
+      <div class="inputcontainer">
+        <label for="emvalue">EM Font Size</label>
+        <input type="text" name="emvalue" id="emvalue" />
+        <button type="submit" onclick="buttonem()">Calculate Pixel</button>
+      </div>
+      <div class="excontainer">
+        <p class="example" id="example" style="font-size: 16px">Exempeltext!</p>
+      </div>
+    </div>
+  </body>
+</html>
