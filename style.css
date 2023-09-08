@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  height: 90vh;
+  width: 95vw;
+  background-color: #aec0b8;
+  transform: translate(2.5vw, 5vh);
+  box-shadow: 2em 2em 2em #123123;
+  border-radius: 5em;
+  gap: 1em;
+}
+.inputcontainer,
+.basepxcontainer,
+.excontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33vh;
+  height: 33vh;
+  background-color: #2a6b4d;
+  margin: auto;
+  padding: 2em;
+  gap: 1em;
+  border-radius: 4em;
+  box-shadow: 0 1em 0 #294c3c;
+}
+input {
+  display: block;
+  background-color: aliceblue;
+  border: 0.5em solid burlywood;
+  padding: 2em;
+  border-radius: 2em;
+}
+label {
+  display: inline-block;
+  background-color: #123123;
+  color: #aec0b8;
+  padding: 1em;
+  border-radius: 1em;
+}
+.example {
+  display: inline-block;
+  background-color: #123123;
+  color: whitesmoke;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: navajowhite;
+  border-radius: 1em;
+  border-bottom: 0.25em solid #aec0b8;
+  border-top: 0.1em solid #2a6b4d;
+  border-left: 0.1em solid #537a68;
+  border-right: 0.1em solid #537a68;
+  box-shadow: 0 0.5em 0 #294c3c;
+}
+button:hover {
+  transform: translate(0, 0.25em);
+  box-shadow: 0 0.25em 0 #294c3c;
+}
+button:active {
+  transform: translate(0, 0.5em);
+  box-shadow: 0 0.1em 0.1em #294c3c;
+}
