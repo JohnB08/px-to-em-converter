@@ -35,10 +35,21 @@ body {
 }
 input {
   display: block;
+  font-family: inherit;
   background-color: aliceblue;
   border: 0.5em solid burlywood;
   padding: 2em;
   border-radius: 2em;
+  -moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input:focus,
+input:active {
+  outline-color: #252525;
+  box-shadow: none;
 }
 label {
   display: inline-block;
