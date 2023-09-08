@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 .container {
   display: flex;
@@ -42,7 +43,8 @@ input {
 label {
   display: inline-block;
   background-color: #123123;
-  color: #aec0b8;
+  color: whitesmoke;
+  font-size: 1.2em;
   padding: 1em;
   border-radius: 1em;
 }
@@ -55,6 +57,8 @@ label {
 }
 
 button {
+  color: #252525;
+  font-size: 1.1em;
   padding: 0.5em 1em;
   background-color: navajowhite;
   border-radius: 1em;
