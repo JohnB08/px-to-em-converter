@@ -13,7 +13,6 @@ function emcalc() {
   let em = document.getElementById("emvalue").value;
   let pxvalue = em * basePx;
   px.value = pxvalue;
-  console.log(pxvalue);
 }
 // function fontsizeem_set() {}
 // function fontsizepx_set() {
