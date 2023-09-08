@@ -48,13 +48,13 @@ label {
   padding: 1em;
   border-radius: 1em;
 }
-.example {
+/* .example {
   display: inline-block;
   background-color: #123123;
   color: whitesmoke;
   padding: 1em;
   border-radius: 1em;
-}
+} */
 
 button {
   color: #252525;
