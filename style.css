@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
   height: 90vh;
   width: 95vw;
-  background-color: #aec0b8;
+  background-color: #9ecfb1;
   transform: translate(2.5vw, 5vh);
   box-shadow: 0 2em 2em #123123;
   border-bottom: 1em solid #294c3c;
@@ -41,6 +41,7 @@ input {
   border: 0.5em solid burlywood;
   padding: 1em;
   border-radius: 2em;
+  box-shadow: 0 0.5em 0 #294c3c;
   -moz-appearance: textfield;
 }
 input::-webkit-inner-spin-button,
@@ -49,8 +50,7 @@ input::-webkit-outer-spin-button {
 }
 input:focus,
 input:active {
-  outline-color: #252525;
-  box-shadow: none;
+  outline: 0.2em solid #123123;
 }
 label {
   display: inline-block;
@@ -59,6 +59,7 @@ label {
   font-size: 1.2em;
   padding: 1em;
   border-radius: 1em;
+  box-shadow: 0 0.2em 0 #294c3c;
 }
 /* .example {
   display: inline-block;
@@ -85,6 +86,7 @@ button {
 button:hover {
   transform: translate(0, 0.25em);
   box-shadow: 0 0.25em 0 #294c3c;
+  cursor: pointer;
 }
 button:active {
   transform: translate(0, 0.5em);
@@ -96,11 +98,16 @@ button:active {
     font-size: 24px;
   }
 }
+@media only screen and (max-width: 1600px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    gap: 4em;
+  }
+}
 @media only screen and (max-width: 450px) {
   body {
     font-size: 16px;
-  }
-  .container {
-    height: auto;
   }
 }
