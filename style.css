@@ -13,7 +13,8 @@ body {
   width: 95vw;
   background-color: #aec0b8;
   transform: translate(2.5vw, 5vh);
-  box-shadow: 2em 2em 2em #123123;
+  box-shadow: 0 2em 2em #123123;
+  border-bottom: 1em solid #294c3c;
   border-radius: 5em;
   gap: 1em;
 }
@@ -22,23 +23,23 @@ body {
 .excontainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 33vh;
   height: 33vh;
   background-color: #2a6b4d;
   margin: auto;
   padding: 2em;
-  gap: 1em;
   border-radius: 4em;
   box-shadow: 0 1em 0 #294c3c;
 }
 input {
   display: block;
   font-family: inherit;
+  font-size: inherit;
   background-color: aliceblue;
   border: 0.5em solid burlywood;
-  padding: 2em;
+  padding: 1em;
   border-radius: 2em;
   -moz-appearance: textfield;
 }
@@ -87,4 +88,18 @@ button:hover {
 button:active {
   transform: translate(0, 0.5em);
   box-shadow: 0 0.1em 0.1em #294c3c;
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    height: auto;
+  }
 }
