@@ -71,6 +71,7 @@ label {
 button {
   color: #252525;
   font-size: 1.1em;
+  font-family: inherit;
   padding: 0.5em 1em;
   background-color: navajowhite;
   border-radius: 1em;
